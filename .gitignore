@@ -1,0 +1,13 @@
+# Strategy / pitch / recon — NEVER publish (this repo is public via Pages)
+pitch/
+recon/
+pitch-why-new-website.md
+
+# Local tooling & editor config
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JM Autoškola Brno — řidičák na auto i motorku | sk. B, A, A2, A1, AM</title>
+<meta name="description" content="Autoškola JM v Brně. Řidičský průkaz skupiny B, A, A2, A1, AM i sdružené kurzy auto + moto. Nový kurz každý týden, moderní vozový park, tři učebny v Brně. Sezóna 2026 — příjem přihlášek otevřený.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="header">
+  <div class="bar">
+    <div class="container">
+      <nav class="nav" aria-label="Hlavní navigace">
+        <a class="brand" href="index.html" aria-label="JM Autoškola — domů">
+          <img src="assets/img/logo.png" alt="JM Autoškola">
+          <span class="brand-tag">JM&nbsp;Autoškola<small>Provozovna Brno</small></span>
+        </a>
+
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Domů</a></li>
+          <li class="has-sub">
+            <a href="#kurzy">Chci řidičák <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></a>
+            <ul class="submenu">
+              <li><a href="#jak-to-probiha"><span class="num">01</span><span>Přijetí<span class="sub-note">Přihláška a zápis</span></span></a></li>
+              <li><a href="#jak-to-probiha"><span class="num">02</span><span>Výuka<span class="sub-note">Teorie i jízdy</span></span></a></li>
+              <li><a href="#jak-to-probiha"><span class="num">03</span><span>Zkouška<span class="sub-note">Testy a jízda</span></span></a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#">Mám řidičák <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></a>
+            <ul class="submenu">
+              <li><a href="#"><span class="num">›</span><span>Kondiční jízdy<span class="sub-note">Vrať se za volant</span></span></a></li>
+              <li><a href="#"><span class="num">›</span><span>Vrácení ŘP<span class="sub-note">Po zákazu řízení</span></span></a></li>
+            </ul>
+          </li>
+          <li><a href="#kurzy">Ceník</a></li>
+          <li class="has-sub">
+            <a href="#">Školení <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></a>
+            <ul class="submenu">
+              <li><a href="#"><span class="num">›</span><span>Školení řidičů<span class="sub-note">Pro firmy i jednotlivce</span></span></a></li>
+              <li><a href="#"><span class="num">›</span><span>Příprava učitelů<span class="sub-note">Staň se instruktorem</span></span></a></li>
+            </ul>
+          </li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a class="nav-tel" href="tel:+420602638833"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> 602 63 88 33</a>
+          <a class="btn btn--sm" href="#kontakt">Chci řidičák <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <button class="burger" id="burger" aria-label="Otevřít menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobilní navigace">
+  <button class="mm-close" id="mmClose" aria-label="Zavřít menu">&times;</button>
+  <ul class="mm-list">
+    <li><a href="index.html">Domů</a></li>
+    <li class="mm-has-sub">
+      <button class="mm-parent" aria-expanded="false">Chci řidičák <svg class="mm-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="mm-sub"><div class="mm-sub-inner">
+        <a href="#jak-to-probiha">Přijetí</a>
+        <a href="#jak-to-probiha">Výuka</a>
+        <a href="#jak-to-probiha">Zkouška</a>
+      </div></div>
+    </li>
+    <li class="mm-has-sub">
+      <button class="mm-parent" aria-expanded="false">Mám řidičák <svg class="mm-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="mm-sub"><div class="mm-sub-inner">
+        <a href="#">Kondiční jízdy</a>
+        <a href="#">Vrácení ŘP</a>
+      </div></div>
+    </li>
+    <li><a href="#kurzy">Ceník</a></li>
+    <li class="mm-has-sub">
+      <button class="mm-parent" aria-expanded="false">Školení <svg class="mm-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></button>
+      <div class="mm-sub"><div class="mm-sub-inner">
+        <a href="#">Školení řidičů</a>
+        <a href="#">Příprava učitelů</a>
+      </div></div>
+    </li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a class="btn btn--sm mm-cta" href="#kontakt">Chci řidičák <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="pill"><span class="dot live"></span> Sezóna 2026 · příjem přihlášek otevřený</span>
+        <h1 class="h-xl">Neděláme řidičáky,<br>děláme <span class="mark">řidiče</span>!</h1>
+        <p class="lead">Autoškola JM v Brně — skupiny <strong>B, A, A2, A1, AM</strong> i sdružené kurzy auto&nbsp;+&nbsp;moto. Učíme srozumitelně a nový kurz otevíráme každý týden.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#kontakt">Chci řidičák <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="#kurzy">Prohlédnout ceník</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>8</strong><span>kategorií<br>auto i moto</span></div>
+          <div class="stat"><strong>3</strong><span>učebny<br>v Brně</span></div>
+          <div class="stat"><strong>1×</strong><span>nový kurz<br>každý týden</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="frame frame--main">
+          <img src="assets/img/moto-a2-bmw-g310r.jpg" alt="BMW G310R — motorka pro výcvik skupiny A2" loading="eager" width="800" height="1000">
+        </div>
+        <div class="frame frame--sub">
+          <img src="assets/img/auto-mazda2.jpg" alt="Mazda 2 s polepem JM Autoškoly — výcvik skupiny B" width="600" height="450">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="section" id="kurzy">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kurzy a skupiny</span>
+      <h2 class="h-lg" style="margin-top:1rem">Co u nás zvládneš</h2>
+      <p class="lead">Od skútru po neomezenou motorku, osobní auto i přívěs. Ceny jsou platné od&nbsp;1.&nbsp;2.&nbsp;2026 a garantujeme je celý rok.</p>
+    </div>
+
+    <div class="cards">
+      <!-- B -->
+      <article class="card reveal" data-d="1">
+        <div class="card-top">
+          <span class="cat"><span class="glyph"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.6-4.5A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.5L19 11M5 11h14v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H8v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5Z"/><circle cx="7.5" cy="13.5" r="1"/><circle cx="16.5" cy="13.5" r="1"/></svg></span> Sk. B</span>
+        </div>
+        <h3>Osobní automobil</h3>
+        <p class="card-meta">od 18 let · 28 hodin jízd</p>
+        <div class="card-foot">
+          <strong class="price">19&nbsp;990 <span class="cur">Kč</span></strong>
+          <a class="textlink" href="#kontakt">Mám zájem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <!-- A2 — feature -->
+      <article class="card card--feature reveal" data-d="2" style="--accent:var(--green)">
+        <div class="card-top">
+          <span class="cat"><span class="glyph"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17" r="3.2"/><circle cx="18.5" cy="17" r="3.2"/><path d="M8.5 17h6l2-6 2.5 1M14.5 17l-2.5-7H9m5.5 1 2 0"/></svg></span> Sk. A2</span>
+          <span class="badge">Nejžádanější</span>
+        </div>
+        <h3>Motorka do 35 kW</h3>
+        <p class="card-meta">od 18 let · 13 hodin jízd</p>
+        <div class="card-foot">
+          <strong class="price">16&nbsp;990 <span class="cur">Kč</span></strong>
+          <a class="textlink" href="#kontakt" style="color:var(--green-300)">Mám zájem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <!-- A -->
+      <article class="card reveal" data-d="3">
+        <div class="card-top">
+          <span class="cat"><span class="glyph"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17" r="3.2"/><circle cx="18.5" cy="17" r="3.2"/><path d="M8.5 17h6l2-6 2.5 1M14.5 17l-2.5-7H9m5.5 1 2 0"/></svg></span> Sk. A</span>
+        </div>
+        <h3>Motorka bez omezení</h3>
+        <p class="card-meta">od 24 let · 13 hodin jízd</p>
+        <div class="card-foot">
+          <strong class="price">16&nbsp;990 <span class="cur">Kč</span></strong>
+          <a class="textlink" href="#kontakt">Mám zájem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <!-- A1 -->
+      <article class="card reveal" data-d="1">
+        <div class="card-top">
+          <span class="cat"><span class="glyph"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17" r="3.2"/><circle cx="18.5" cy="17" r="3.2"/><path d="M8.5 17h6l2-6 2.5 1M14.5 17l-2.5-7H9m5.5 1 2 0"/></svg></span> Sk. A1</span>
+        </div>
+        <h3>Motorka do 125 ccm</h3>
+        <p class="card-meta">od 16 let · 13 hodin jízd</p>
+        <div class="card-foot">
+          <strong class="price">15&nbsp;990 <span class="cur">Kč</span></strong>
+          <a class="textlink" href="#kontakt">Mám zájem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <!-- AM -->
+      <article class="card reveal" data-d="2">
+        <div class="card-top">
+          <span class="cat"><span class="glyph"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M9 17h6l-1-5h-3l-1 2.5M14 12l1.5-2H18"/></svg></span> Sk. AM</span>
+        </div>
+        <h3>Moped do 45 km/h</h3>
+        <p class="card-meta">od 15 let · 13 hodin jízd</p>
+        <div class="card-foot">
+          <strong class="price">15&nbsp;990 <span class="cur">Kč</span></strong>
+          <a class="textlink" href="#kontakt">Mám zájem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <!-- B + A2 sdružený -->
+      <article class="card reveal" data-d="3">
+        <div class="card-top">
+          <span class="cat"><span class="glyph"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1.2-3A1.6 1.6 0 0 1 5.7 5h4.6a1.6 1.6 0 0 1 1.5 1L13 9M3 9h10v4H3V9Z"/><circle cx="15.5" cy="17" r="2.6"/><path d="M12 17h.6M18 17h.6M16.5 16l1.3-3.5 1.4.6"/></svg></span> B + A2</span>
+          <span class="badge">Auto + Moto</span>
+        </div>
+        <h3>Sdružený kurz</h3>
+        <p class="card-meta">od 18 let · 28 + 13 hodin jízd</p>
+        <div class="card-foot">
+          <strong class="price">35&nbsp;990 <span class="cur">Kč</span></strong>
+          <a class="textlink" href="#kontakt">Mám zájem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- secondary offers strip -->
+    <div class="offers reveal">
+      <span class="offers-label">Nabízíme i:</span>
+      <span class="offers-items">
+        <span class="chip">Přívěsy BE / B96 — od 4&nbsp;990 Kč</span>
+        <span class="chip">Kondiční jízdy — 1&nbsp;400 Kč</span>
+        <span class="chip">Vrácení ŘP</span>
+        <span class="chip">Školení řidičů</span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="section section--tight" id="jak-to-probiha">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow center">Chci řidičák</span>
+      <h2 class="h-lg" style="margin-top:1rem">Tři kroky k řidičáku</h2>
+      <p class="lead">Od přihlášky až po zkoušku tě provedeme krok za krokem. Žádné překvapení, jasný postup.</p>
+    </div>
+
+    <div class="journey-track">
+      <div class="step reveal" data-d="1">
+        <div class="knob">01</div>
+        <span class="step-tag">Přijetí</span>
+        <h3>Přihláška a zápis</h3>
+        <p>Vyplníš přihlášku a přijdeš za námi do učebny. Poradíme s výběrem skupiny i termínu kurzu.</p>
+      </div>
+      <div class="step reveal" data-d="2">
+        <div class="knob">02</div>
+        <span class="step-tag">Výuka</span>
+        <h3>Teorie a jízdy</h3>
+        <p>Teorie v učebně a jízdy s instruktorem. Moto výcvik začíná na cvičné ploše v Řečkovicích.</p>
+      </div>
+      <div class="step reveal" data-d="3">
+        <div class="knob">03</div>
+        <span class="step-tag">Zkouška</span>
+        <h3>Testy a jízda</h3>
+        <p>Test z pravidel, ovládání a údržba, jízda ve městě. Zkoušku autoškolou máš u nás zdarma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section class="section" id="vozovy-park">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Vozový park</span>
+      <h2 class="h-lg" style="margin-top:1rem">Auta a motorky, na kterých se naučíš</h2>
+      <p class="lead">Moderní a udržovaná technika — od skútru přes naháče A2 až po silné stroje skupiny A.</p>
+    </div>
+
+    <div class="fleet-grid">
+      <figure class="fleet-item big reveal" data-d="1">
+        <img src="assets/img/moto-a2-bmw-g310r.jpg" alt="BMW G310R" width="800" height="600">
+        <figcaption class="cap"><div><b>BMW G310R</b><span>Sportovní naháč pro sk. A2</span></div><span class="tag">A2</span></figcaption>
+      </figure>
+      <figure class="fleet-item std reveal" data-d="2">
+        <img src="assets/img/auto-mazda2.jpg" alt="Mazda 2" width="600" height="450">
+        <figcaption class="cap"><div><b>Mazda 2</b><span>Svižné auto pro sk. B</span></div><span class="tag">B</span></figcaption>
+      </figure>
+      <figure class="fleet-item std reveal" data-d="3">
+        <img src="assets/img/moto-pcx125.jpg" alt="Honda PCX 125" width="800" height="600">
+        <figcaption class="cap"><div><b>Honda PCX&nbsp;125</b><span>Skútr pro AM / A1</span></div><span class="tag">AM</span></figcaption>
+      </figure>
+      <figure class="fleet-item big reveal" data-d="1">
+        <img src="assets/img/moto-a-z650.jpg" alt="Kawasaki Z650" width="800" height="600">
+        <figcaption class="cap"><div><b>Kawasaki Z650</b><span>Silný stroj pro sk. A bez omezení</span></div><span class="tag">A</span></figcaption>
+      </figure>
+      <figure class="fleet-item std reveal" data-d="2">
+        <img src="assets/img/auto-corsa.jpg" alt="Opel Corsa" width="600" height="450">
+        <figcaption class="cap"><div><b>Opel Corsa</b><span>Další auto pro sk. B</span></div><span class="tag">B</span></figcaption>
+      </figure>
+      <a class="fleet-tile reveal" data-d="3" href="#kontakt">
+        <span class="tile-in">
+          <b>Celý vozový park</b>
+          <span>Honda · Suzuki · Yamaha…</span>
+          <span class="arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section section--tight" id="aktualne">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Aktuálně</span>
+      <h2 class="h-lg" style="margin-top:1rem">Co je nového</h2>
+    </div>
+
+    <div class="news-grid">
+      <article class="news is-lead reveal" data-d="1">
+        <span class="news-flag">Důležité</span>
+        <span class="news-date">Od 1. 6. 2026</span>
+        <h3>Stěhujeme učebnu na Kobližnou</h3>
+        <p>Naši učebnu v centru najdete nově na adrese <strong>Kobližná 47/19</strong> (budova OD&nbsp;Vichr, 4.&nbsp;patro, dveře&nbsp;414). Výuka tu probíhá v úterý 17–19&nbsp;h. Těšíme se na vás na nové, lépe dostupné adrese.</p>
+        <a class="textlink" href="#kontakt">Kde nás najdeš <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="news reveal" data-d="2">
+        <span class="news-date">30. 3. 2026</span>
+        <h3>Moto sezóna 2026</h3>
+        <p>Zahájení jízd na motorkách plánujeme na poslední týden v březnu. Přihlášky na AM, A1, A2 i A přijímáme už teď.</p>
+      </article>
+
+      <article class="news reveal" data-d="3">
+        <span class="news-date">Vozový park</span>
+        <h3>Nové BMW G310R</h3>
+        <p>Skupina A2 nově jezdí na dvou strojích BMW&nbsp;G310R — lehkých, svižných a ideálních pro výcvik.</p>
+      </article>
+
+      <article class="news reveal" data-d="2">
+        <span class="news-date">Od 1. 1. 2026</span>
+        <h3>Posudek elektronicky</h3>
+        <p>Lékaři nově vydávají zdravotní posudek v elektronické podobě — méně papírování při zápisu.</p>
+      </article>
+
+      <article class="news reveal" data-d="3">
+        <span class="news-date">Novinka</span>
+        <h3>Řízení sk. B už od 17 let</h3>
+        <p>Nově můžeš začít řídit auto už v 17 letech — v doprovodu mentora. Zeptej se nás na podmínky.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="container">
+    <div class="why reveal">
+      <div class="why-head">
+        <span class="eyebrow">Proč my</span>
+        <h2 class="h-lg" style="margin-top:1rem">Autoškola po našem</h2>
+        <p class="lead">Srozumitelně, férově a bez zbytečných cavyků. Učební pomůcky jako bič nebo rákoska u nás fakt nehledej. 😉</p>
+      </div>
+
+      <div class="why-list">
+        <div class="why-item">
+          <span class="wi-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4.5" width="18" height="16" rx="2.5"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg></span>
+          <div><h4>Nový kurz každý týden</h4><p>Nemusíš čekat měsíce — nový kurz otevíráme nejméně 1× týdně.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="wi-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 5 5 19M8.5 7A1.5 1.5 0 1 1 5.5 7a1.5 1.5 0 0 1 3 0ZM18.5 17a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg></span>
+          <div><h4>Slevy pro studenty</h4><p>Studenti, rodiče na mateřské i nezaměstnaní mají u nás trvale slevu.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="wi-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div><h4>Cena garantovaná rok</h4><p>Cena platí dle data podání přihlášky a garantujeme ji 12 měsíců.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="wi-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.7-7-11a7 7 0 1 1 14 0c0 5.3-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><h4>Vlastní cvičná plocha</h4><p>Moto výcvik na ploše v bývalých kasárnách v Řečkovicích.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="wi-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.6-4.5A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.5L19 11v6H5v-6Z"/><circle cx="8" cy="14" r="1"/><circle cx="16" cy="14" r="1"/></svg></span>
+          <div><h4>Auto i moto pod střechou</h4><p>Sdružené kurzy A2+B ušetří čas i peníze oproti dvěma kurzům zvlášť.</p></div>
+        </div>
+        <div class="why-item">
+          <span class="wi-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v8H4v-8M2 7h20v5H2zM12 7v13M12 7S11 3 8.5 3 5 5 5 5s1 2 7 2Zm0 0s1-4 3.5-4S19 5 19 5s-1 2-7 2Z"/></svg></span>
+          <div><h4>Dárkové poukazy</h4><p>Řidičák jako dárek? Máme dárkové poukazy v hodnotě kurzu.</p></div>
+        </div>
+      </div>
+
+      <div class="pay">
+        <span>Platit můžeš:</span>
+        <span class="chip">Hotovost</span>
+        <span class="chip">Převod na účet</span>
+        <span class="chip">Pluxee / Sodexo</span>
+        <span class="chip">Edenred</span>
+        <span class="chip">Benefit plus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANCHES / CONTACT -->
+<section class="section section--tight" id="kontakt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2 class="h-lg" style="margin-top:1rem">Kde nás najdeš v Brně</h2>
+    </div>
+
+    <div class="branch-grid">
+      <article class="branch is-new reveal" data-d="1">
+        <span class="pill"><span class="dot live"></span> Nová učebna · od 1. 6. 2026</span>
+        <span class="b-num">01</span>
+        <h3>Učebna Kobližná</h3>
+        <address>Kobližná 47/19, budova OD&nbsp;Vichr<br>4. patro, dveře 414</address>
+        <p class="b-hours"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Výuka úterý 17–19 h</p>
+      </article>
+      <article class="branch reveal" data-d="2">
+        <span class="b-num">02</span>
+        <h3>Učebna Pražská</h3>
+        <address>Pražská 664/8<br>(starý start Velké ceny)</address>
+        <p class="b-hours"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Výuka středa 17–19 · kancelář po–pá 13–17</p>
+      </article>
+      <article class="branch reveal" data-d="3">
+        <span class="b-num">03</span>
+        <h3>Cvičná plocha Řečkovice</h3>
+        <address>Bývalá kasárna, Brno-Řečkovice<br>Začátek i konec všech moto jízd</address>
+        <p class="b-hours"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Jízdy 6:30–19:30</p>
+      </article>
+    </div>
+
+    <div class="contact-strip">
+      <div class="contact-card reveal" data-d="1">
+        <span class="cc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <div><small>Auto · kondiční jízdy</small><b><a href="tel:+420602638833">602 63 88 33</a></b><a class="mail" href="mailto:brno@jmautoskola.cz">brno@jmautoskola.cz</a></div>
+      </div>
+      <div class="contact-card reveal" data-d="2">
+        <span class="cc-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17" r="3.2"/><circle cx="18.5" cy="17" r="3.2"/><path d="M8.5 17h6l2-6 2.5 1M14.5 17l-2.5-7H9m5.5 1 2 0"/></svg></span>
+        <div><small>Moto výcvik</small><b><a href="tel:+420792308883">792 308 883</a></b><a class="mail" href="mailto:moto@jmautoskola.cz">moto@jmautoskola.cz</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2 class="h-lg">Sezóna 2026 je otevřená. Naskoč.</h2>
+      <p>Vyber si skupinu, vyplň přihlášku a vyjeď s námi. Auto, motorka, nebo rovnou obojí — řidičák máš blíž, než si myslíš.</p>
+      <div class="hero-cta">
+        <a class="btn btn--light" href="#kontakt">Chci řidičák <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="tel:+420602638833">Zavolej: 602 63 88 33</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="f-grid">
+      <div class="f-brand">
+        <img src="assets/img/logo.png" alt="JM Autoškola">
+        <p>Autoškola JM, provozovna Brno. Kurzy skupin B, A, A2, A1, AM, přívěsy, kondiční jízdy i školení řidičů. Vlastník Martin Tibenský, IČ 65862457.</p>
+      </div>
+      <div class="f-links">
+        <h4>Kurzy</h4>
+        <ul>
+          <li><a href="#kurzy">Sk. B — auto</a></li>
+          <li><a href="#kurzy">Sk. A2 — moto</a></li>
+          <li><a href="#kurzy">Sk. A1 — moto</a></li>
+          <li><a href="#kurzy">Sk. A — moto</a></li>
+          <li><a href="#kurzy">Sk. AM — moped</a></li>
+          <li><a href="#kurzy">Sdružený A2 + B</a></li>
+          <li><a href="#kurzy">Přívěsy BE / B96</a></li>
+        </ul>
+      </div>
+      <div class="f-links">
+        <h4>Autoškola</h4>
+        <ul>
+          <li><a href="#jak-to-probiha">Chci řidičák</a></li>
+          <li><a href="#">Mám řidičák</a></li>
+          <li><a href="#kurzy">Ceník</a></li>
+          <li><a href="#">Školení řidičů</a></li>
+          <li><a href="#">Příprava učitelů</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="f-contact">
+        <h4>Kontakt &amp; ke stažení</h4>
+        <p>Auto: <b>602 63 88 33</b><br>Moto: <b>792 308 883</b><br>Učebny: <b>792 315 527</b><br>Info: <b>606 946 513</b></p>
+        <p>Po–Pá 8–10 · 13–17<br>Účet: 232316610/0300</p>
+        <ul class="f-dl" style="margin-top:1rem">
+          <li><a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"/><path d="M14 2v6h6"/></svg> Přihláška (PDF)</a></li>
+          <li><a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"/><path d="M14 2v6h6"/></svg> Zdravotní posudek (PDF)</a></li>
+          <li><a href="#">Pravidla provozu · Dopravní značky</a></li>
+          <li><a href="https://etesty2.mdcr.cz/" target="_blank" rel="noopener">e-Testy (procvičování) ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 JM Autoškola — provozovna Brno · Ukázkový redesign webu</span>
+      <span>Návrh &amp; realizace: <a href="#">Chatbot.Expert</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=2"></script>
+</body>
+</html>
